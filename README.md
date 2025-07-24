@@ -9,6 +9,13 @@ This project uses [Poetry](https://python-poetry.org/) for dependency
 management. To install:
 
 ### On macOS:
+
+Set-up github ssh access (see how to do this [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)), then:
+
+```bash
+git clone git@github.com:center-for-humans-and-machines/internship-hpc-repo-template.git
+```
+
 Run the automated install script:
 ```bash
 ./dev/install-macos.sh
@@ -37,6 +44,20 @@ source <<activate_file>>
 ```
 
 ### On Raven cluster
+To install the repository on raven use ssh.
+Instructions can be found [here](https://mpib.atlassian.net/wiki/spaces/CP/pages/2148073476/SSH+to+Raven+Cluster), [here](https://docs.mpcdf.mpg.de/doc/computing/raven-user-guide.html#login) and [here](https://mpib.atlassian.net/wiki/spaces/CP/pages/1487011842/Passwordless+login+to+Raven+from+VSCode).
+
+
+```bash
+ssh raven
+```
+
+Set-up github ssh access (see how to do this [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)), then:
+
+```bash
+git clone git@github.com:center-for-humans-and-machines/internship-hpc-repo-template.git
+```
+
 Run the automated install script:
 ```bash
 ./dev/install-raven.sh
