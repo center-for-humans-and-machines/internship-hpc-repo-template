@@ -40,7 +40,7 @@ repos:
     hooks:
     -   id: check-test-coverage
         name: Check test coverage (warning only)
-        entry: ./check-coverage.sh
+        entry: ./dev/check-coverage.sh
         language: system
         pass_filenames: false
         verbose: true

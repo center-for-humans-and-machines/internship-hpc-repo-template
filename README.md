@@ -9,17 +9,57 @@ This project uses [Poetry](https://python-poetry.org/) for dependency
 management. To install:
 
 ### On macOS:
-1. Install pipx: `brew install pipx && pipx ensurepath`
-2. Install Poetry: `pipx install poetry`
-3. Install project: `poetry install`
-4. Find virtual environment: `poetry env activate`
-5. Activate virtual environment: `source <<activate_file>>`
+Run the automated install script:
+```bash
+./dev/install-macos.sh
+```
+
+Or install manually:
+```bash
+# Install pipx
+brew install pipx && pipx ensurepath
+
+# Install Poetry
+pipx install poetry
+
+# Install project
+poetry install
+```
+
+Then activate via
+
+```bash
+# Search activation file
+poetry env activate
+
+# Activate virtual environment
+source <<activate_file>>
+```
 
 ### On Raven cluster
-1. load python version `module load python-waterboa/2025.06`
-2. Install project: `poetry install`
-3. Find virtual environment: `poetry env activate`
-4. Activate virtual environment: `source <<activate_file>>`
+Run the automated install script:
+```bash
+./dev/install-raven.sh
+```
+
+Or install manually:
+```bash
+# Load python version
+module load python-waterboa/2025.06
+
+# Install project
+poetry install
+```
+
+Then activate via
+
+```bash
+# Search activation file
+poetry env activate
+
+# Activate virtual environment
+source <<activate_file>>
+```
 
 ### Other systems:
 For installation on other systems, see [pipx installation docs](https://pipx.pypa.io/stable/installation/)
