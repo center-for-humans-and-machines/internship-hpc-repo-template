@@ -30,4 +30,4 @@ ACTIVATE_COMMAND=$(poetry env activate)
 echo "✅ Installation complete!"
 echo ""
 echo "To activate the virtual environment, run:"
-echo -e "   \033[32m$ACTIVATE_COMMAND\033[0m" 
+echo -e "   \033[32m$ACTIVATE_COMMAND\033[0m"
